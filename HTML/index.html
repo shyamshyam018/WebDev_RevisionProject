@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demo of all common HTML tags" />
+  <title>All HTML Tags Demo</title>
+  <base href="/" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    section { border: 1px solid #ccc; margin-bottom: 20px; padding: 10px; }
+  </style>
+  <script>
+    console.log("Script tag working!");
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Main Heading (h1)</h1>
+    <nav>
+      <a href="#text">Text</a> |
+      <a href="#lists">Lists</a> |
+      <a href="#media">Media</a> |
+      <a href="#table">Table</a> |
+      <a href="#forms">Forms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="text">
+      <h2>Text Content</h2>
+      <h3>Headings</h3>
+      <h4>Heading h4</h4>
+      <h5>Heading h5</h5>
+      <h6>Heading h6</h6>
+      <p>This is a paragraph.</p>
+      <p>This line has a<br>line break.</p>
+      <hr>
+      <p><strong>Strong</strong> and <em>emphasized</em> text.</p>
+      <blockquote>This is a blockquote.</blockquote>
+      <p>This is <b>bold</b>, <i>italic</i>, <u>underlined</u>, and <mark>highlighted</mark>.</p>
+      <p><small>Small text</small>, <sup>superscript</sup>, <sub>subscript</sub>.</p>
+      <span>This is a span element.</span>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <ul>
+        <li>Unordered item 1</li>
+        <li>Unordered item 2</li>
+      </ul>
+      <ol>
+        <li>Ordered item 1</li>
+        <li>Ordered item 2</li>
+      </ol>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <a href="https://skibidi.com/" ><img src="https://vectorart.ai/images/prompt3.svg"    alt="Sample image" height="200" width="300" /></a>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg" />
+        Your browser does not support audio.
+      </audio>
+      <video width="200" controls>
+        <source src="sample.mp4" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+      <iframe src="https://skibidi.com/" width="300" height="100" title="iframe example"></iframe>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table border="1">
+        <caption>Sample Table</caption>
+        <colgroup>
+          <col style="background-color:#f2f2f2">
+          <col style="background-color:#e0e0e0">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Footer row</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="forms">
+      <h2>Forms</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Basic Info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" /><br><br>
+
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="bio"></textarea><br><br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select><br><br>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+
+
+    <section id="semantic">
+      <h2>Semantic Tags</h2>
+      <article>
+        <h3>Article Title</h3>
+        <p>This is an article section.</p>
+      </article>
+      <aside>
+        <p>This is an aside section.</p>
+      </aside>
+      <figure>
+        <img src="https://via.placeholder.com/80" alt="Placeholder">
+        <figcaption>Figure caption</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Tags Demo</p>
+  </footer>
+
+</body>
+</html>
