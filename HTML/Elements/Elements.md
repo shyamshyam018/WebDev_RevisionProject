@@ -159,3 +159,19 @@ This is a list of the most commonly used HTML tags, categorized for better under
 
 1. HTML tags are **not case sensitive**: `<P>` means the same as `<p>`.
 2. In HTML5, the `/` at the end is optional, but allowed (e.g., `<br>` or `<br />` both work).
+3. UTF-8: A variable-width encoding where characters are represented by 1 to 4 bytes, making it efficient for storing text in memory and transmitting it over networks. 
+4. UTF-16: A variable-width encoding that uses 2 or 4 bytes to represent characters. 
+5. UTF-32: A fixed-width encoding that uses 4 bytes (32 bits) for each character. 
+6. Meta tag -
+            name="viewport" content="width=device-width, initial-scale=1"
+            name="title" property="og:title" content="W3Schools.com"
+            name="Keywords" content="HTML, Python, CSS, SQL, Java"
+            name="Description" content="Well organized and easy to understand Web"
+7. "semantic" refers to using tags that accurately reflect the meaning and structure of the content, rather than just its presentation, enhancing readability for both developers and search engines
+examples : <header>, <nav>, <article>, <aside>, <main>, <footer> , <fig> , <figcaption>
+8. Nesting a <button> inside <a> is not valid HTML. Use one or the other, not both.
+9. <q> is meant for inline quotations and usually auto-wraps with quotation marks.
+10. <span> is inline-only, and shouldn’t wrap block-level tags like <p>, <h1>, etc.
+
+
+
