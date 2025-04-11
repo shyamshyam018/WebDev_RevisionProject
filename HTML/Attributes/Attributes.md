@@ -173,3 +173,9 @@ Let me know if you'd also like:
 - Examples for each attribute?
 - A cheat sheet for interview prep?
 - Advanced tags like ARIA roles, custom elements, or Web Components?
+- There can only be one <base> tag in a document. It must be placed inside the <head> tag.
+- noopener	Blocks access to window.opener (security protection) 
+- noreferrer Hides the referrer info & also blocks window.opener
+
+
+
