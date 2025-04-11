@@ -1,0 +1,83 @@
+What is the purpose of using <main> in the below snippet?
+
+<main>
+  <article>
+    <h2>Deep Dive into CSS Grid</h2>
+    <p>Content goes here...</p>
+  </article>
+</main>
+
+
+A) To style the layout
+B) To add a footer
+C) To define the main content of the page ✅
+D) To include reusable scripts
+
+🔹 2. True or False
+There can be multiple <main> elements on one page.
+
+✅ A) False
+B) True
+
+Semantic HTML demands only one <main> element per document for clarity and accessibility.
+
+🔹 3. Fill in the Blank
+The <______> tag is used for content not central to the main flow of the page, such as sidebars and widgets.
+
+✅ Correct Answer: aside
+
+🔹 4. Choose the Best Explanation
+Why would you use a <figure> and <figcaption> combo instead of just an <img>?
+
+A) To improve page loading
+B) To make the image zoomable
+✅ C) To semantically group an image with a caption
+D) To remove alt text
+
+
+🔹 5. Find the semantic error in the following code:
+
+<article>
+  <header>Blog Title</header>
+  <footer>Written by Shyam</footer>
+</article>
+<footer>&copy; 2025</footer>
+
+🔹 6. Which tag is best suited for this scenario?
+You are listing articles about HTML5, CSS3, and JavaScript each under a separate heading.
+
+✅ A) <section>
+B) <div>
+C) <aside>
+D) <nav>
+
+🔹 7. Fill in the Blank
+The <time> tag helps in SEO and accessibility by offering a machine-readable format using the _________ attribute.
+
+✅ Correct Answer: datetime
+
+🔹 8. Match the tag with its purpose
+Tag	Purpose
+a) <nav>	1) Describes a content group with a caption
+b) <figure>	2) Section of navigational links
+c) <section>	3) Theme-based content with heading
+d) <aside>	4) Content indirectly related to main
+
+✅ Matches: a→2, b→1, c→3, d→4
+
+9 .What will this render as?
+
+<p>Follow me on &lt;a href=&quot;#&quot;&gt;Twitter&lt;/a&gt;</p>
+
+A) Hyperlink to Twitter
+B) Broken tag
+✅ C) The <a> tag is displayed as plain text
+D) JavaScript error
+
+🔹 10. Scenario-Based MCQ
+You're creating a blog layout. Which structure is most semantically correct?
+
+A) Use <div> for all layout elements
+✅ B) Wrap blog posts inside <article>, use <section> for content divisions
+C) Use <p> for every element
+D) Nest all inside <header>

@@ -1,0 +1,176 @@
+🔤 HTML Entities Quiz
+🔹 Level 1: Basics
+1. What is the purpose of HTML entities?
+A) To define new HTML tags
+B) To insert JavaScript
+C) To represent special characters ✅
+D) To create styles in HTML
+
+2. Which HTML entity is used to display an ampersand (&) symbol?
+A) &and;
+B) &sym;
+C) &amp; ✅
+D) &ap;
+
+3. Which HTML entity is used to add a non-breaking space between words?
+A) &nbsp; ✅
+B) &sp;
+C) &space;
+D) &nbs;
+
+4. How do you display a less-than sign (<) in HTML?
+A) &lt; ✅
+B) &less;
+C) <lt>
+D) &les;
+
+🔹 Level 2: Symbol Usage
+5. What is the output of the following HTML line?
+
+html
+Copy
+Edit
+<p>5 &lt; 10 &gt; 3</p>
+A) 5 < 10 > 3 ✅
+B) 5 > 10 < 3
+C) 5 and 10 are 3
+D) It gives an error
+
+6. Which entity would you use to represent a copyright?
+A) &copy; ✅
+B) &cright;
+C) &cp;
+D) &cpr;
+
+7. What will this render?
+
+html
+Copy
+Edit
+<p>&quot;Hello World&quot;</p>
+A) 'Hello World'
+B) "Hello World" ✅
+C) Hello World
+D) &quot;Hello World&quot;
+
+8. Which of the following represents the Euro (€) symbol?
+A) &euro; ✅
+B) &eur;
+C) &currency;
+D) &eu;
+
+🔹 Level 3: Practical Usage
+9. You want to write if (a < b && b > c) in HTML. Which is the correct code?
+A) if (a < b && b > c)
+B) if (a &lt; b &and;&and; b &gt; c)
+C) if (a &lt; b &amp;&amp; b &gt; c) ✅
+D) if (a < b &amp;&amp; b > c)
+
+10. What is the correct HTML to show this: It’s okay.
+A) It&apos;s okay. ✅
+B) Its okay.
+C) It’ okay.
+D) It&quote;s okay.
+
+11. Which one is not a valid HTML entity?
+A) &hearts;
+B) &rarr;
+C) &star; ✅
+D) &copy;
+
+12. What does &mdash; represent?
+A) Dash
+B) En dash
+C) Minus sign
+D) Em dash ✅
+
+1. What will the following HTML render?
+
+html
+Copy
+Edit
+<p>Cost: 50 &euro; &amp; Tax: 5%</p>
+A) Cost: 50 € & Tax: 5% ✅
+B) Cost: 50 € and Tax: 5%
+C) Cost: 50€ & Tax: 5%
+D) Cost: 50€ & Tax: 5%
+
+2. You want to prevent line break between Dr. and Smith. Which entity should you use?
+A) &nbsp; ✅
+B) &ensp;
+C) &space;
+D) &nobr;
+
+3. Which of the following is not true about HTML entities?
+A) They start with & and end with ;
+B) They are used to encode reserved characters
+C) They are always converted to JavaScript code ❌
+D) They help display characters like ©, →, and ♥ ✅
+
+4. Choose the correct way to display: AT&T is a U.S. company
+A) AT&T is a U.S. company
+B) AT&amp;T is a U.S. company ✅
+C) AT&and;T is a U.S. company
+D) AT@T is a U.S. company
+
+🔸 Level 3 - Debug the Output
+5. What will the following code display?
+
+html
+Copy
+Edit
+<p>5 &lt; 10 &gt 3</p>
+A) 5 < 10 > 3
+B) 5 < 10 &gt 3
+C) 5 < 10 > 3 (with &gt not rendered) ✅
+D) Error in rendering
+
+❗️&gt is invalid without the semicolon — always write &gt;
+
+6. Which of the following is used to display a right arrow →
+A) &rightarrow;
+B) &rarr; ✅
+C) &rarrow;
+D) &gtarrow;
+
+7. What’s the result of this line?
+
+html
+Copy
+Edit
+<p>&copy 2025</p>
+A) © 2025
+B) &copy 2025
+C) ©2025
+D) &copy 2025 is displayed as-is ✅
+
+❗️Missing semicolon causes browser to ignore it as an entity
+
+🔸 Level 4 - Applied Knowledge
+8. You are writing a blog and want to display this line as-is:
+
+html
+Copy
+Edit
+if (x < 100 && x > 50)
+Which of the following is correct?
+A) <p>if (x < 100 && x > 50)</p>
+B) <p>if (x &lt; 100 &amp;&amp; x &gt; 50)</p> ✅
+C) <p>if (x and x)</p>
+D) <p>&lt;if&gt;</p>
+
+9. What is the correct entity to represent the ellipsis (…) in HTML?
+A) &dots;
+B) &ellipsis;
+C) &hellip; ✅
+D) &...;
+
+10. You want to show this text in HTML:
+"Be the change you wish to see." - Gandhi
+What’s the correct code?
+A) "Be the change you wish to see." - Gandhi
+B) &quot;Be the change you wish to see.&quot; - Gandhi ✅
+C) 'Be the change you wish to see.' - Gandhi
+D) &quote;Be the change&quote; - Gandhi
+
+
