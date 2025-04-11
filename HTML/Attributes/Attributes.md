@@ -176,6 +176,111 @@ Let me know if you'd also like:
 - There can only be one <base> tag in a document. It must be placed inside the <head> tag.
 - noopener	Blocks access to window.opener (security protection) 
 - noreferrer Hides the referrer info & also blocks window.opener
+- defer ensures non-blocking loading, and waits for DOM parsing to finish before executing the script — useful for layout-first strategies.
+
+
+
+## ✅ 1. Boolean Attributes
+
+These are **true if present**, **false if absent**. You don’t need to assign a value (e.g., use `required`, not `required="true"`).
+
+| Attribute         | Used In                              | Description                           |
+|------------------|---------------------------------------|---------------------------------------|
+| `checked`         | `<input type="checkbox">`, `<radio>` | Marks checkbox/radio as selected      |
+| `disabled`        | Forms (`<input>`, `<button>`, etc.)  | Disables the element                  |
+| `readonly`        | `<input>`, `<textarea>`              | Makes element read-only               |
+| `required`        | Form inputs                          | Makes input mandatory                 |
+| `multiple`        | `<select>`, `<input type="file">`    | Allows multiple selections            |
+| `autofocus`       | Form inputs                          | Focuses on element when page loads    |
+| `selected`        | `<option>`                           | Marks option as selected              |
+| `hidden`          | Global                               | Hides the element                     |
+| `contenteditable` | Global                               | Makes element editable                |
+| `draggable`       | Global                               | Enables dragging                      |
+| `autoplay`        | `<audio>`, `<video>`                 | Auto-starts playback                  |
+| `controls`        | `<audio>`, `<video>`                 | Shows player controls                 |
+| `loop`            | `<audio>`, `<video>`                 | Loops playback                        |
+| `muted`           | `<audio>`, `<video>`                 | Starts muted                          |
+| `novalidate`      | `<form>`                             | Skips built-in validation             |
+| `default`         | `<track>`, `<source>`                | Default track/source                  |
+| `defer`           | `<script>`                           | Defers script execution               |
+| `async`           | `<script>`                           | Executes script asynchronously        |
+| `allowfullscreen` | `<iframe>`                           | Allows fullscreen display             |
+
+---
+
+## 📋 2. Regular Attributes (require values)
+
+### 🔹 Global Attributes
+
+| Attribute     | Example Values      |
+|---------------|---------------------|
+| `id`          | `main`, `nav1`      |
+| `class`       | `header`, `btn-lg`  |
+| `style`       | `color: red;`       |
+| `title`       | `Tooltip text`      |
+| `tabindex`    | `1`, `0`, `-1`      |
+| `accesskey`   | `s`, `h`, `1`       |
+| `lang`        | `en`, `fr`, `ar`    |
+| `dir`         | `ltr`, `rtl`        |
+| `data-*`      | `data-user="123"`   |
+
+---
+
+### 🔹 Form-Specific Attributes
+
+| Attribute       | Typical Values                   |
+|------------------|----------------------------------|
+| `type`           | `text`, `number`, `email`, etc. |
+| `name`           | `username`, `age`, `gender`     |
+| `value`          | Default input value             |
+| `placeholder`    | Guide text inside input         |
+| `maxlength`      | Maximum characters              |
+| `min`, `max`     | For numeric inputs              |
+| `step`           | Step value                      |
+| `pattern`        | Regex pattern                   |
+| `action`         | URL to submit to                |
+| `method`         | `GET`, `POST`                   |
+| `enctype`        | `multipart/form-data`, etc.     |
+| `target`         | `_blank`, `_self`, etc.         |
+| `autocomplete`   | `on`, `off`                     |
+
+---
+
+### 🔹 Media Elements
+
+| Element             | Attributes                                |
+|---------------------|-------------------------------------------|
+| `<img>`             | `src`, `alt`, `width`, `height`, `loading`|
+| `<audio>`, `<video>`| `src`, `preload`, `poster`, etc.          |
+
+---
+
+### 🔹 Link, Meta, and Script
+
+| Element     | Attributes                                    |
+|-------------|-----------------------------------------------|
+| `<a>`       | `href`, `target`, `rel`, `download`, `title`  |
+| `<link>`    | `rel`, `href`, `media`, `type`                |
+| `<meta>`    | `name`, `content`, `charset`, `http-equiv`    |
+| `<script>`  | `src`, `type`, `defer`, `async`               |
+
+---
+
+### 🔹 Table-Specific Attributes
+
+| Attribute    | Element         |
+|--------------|-----------------|
+| `colspan`    | `<td>`, `<th>`  |
+| `rowspan`    | `<td>`, `<th>`  |
+| `align`      | `<td>`, `<th>`  |
+| `valign`     | `<td>`, `<th>`  |
+| `scope`      | `<th>`          |
+
+---
+
+📘 *Tip: Use this sheet for quick reference while coding or preparing for interviews.*
+
+
 
 
 

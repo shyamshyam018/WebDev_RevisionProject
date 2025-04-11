@@ -1,0 +1,182 @@
+## BASICS 
+
+Q1. Which of the following is a valid use of the autofocus attribute in an input field?
+A) <input type="text" autofocus="false">
+B) ✅ <input type="text" autofocus>
+C) <input type="text" autofocus="no">
+D) <input type="text" auto-focus>
+
+✔️ Answer: B
+💡 Explanation: autofocus is a boolean attribute, so its mere presence activates it—no need for a value.
+
+Q2. What is the purpose of the rel="noopener noreferrer" attribute combination on an <a> tag with target="_blank"?
+A) Enables animations between pages
+B) ✅ Prevents the new page from accessing window.opener and hides the referrer
+C) Improves SEO
+D) Automatically downloads the linked page
+
+✔️ Answer: B
+💡 Explanation: noopener blocks access to window.opener, and noreferrer hides the HTTP referrer. It's a security + privacy combo.
+
+Q3. Which <iframe> attribute allows embedding external content securely by limiting its permissions?
+A) allowfullscreen
+B) lazyload
+C) ✅ sandbox
+D) preload
+
+✔️ Answer: C
+💡 Explanation: sandbox enforces a restricted environment for iframes, disabling scripts, forms, and more unless explicitly allowed.
+
+Q4. What is the only allowed location for the <base> tag in an HTML document?
+A) Inside <body>
+B) ✅ At the end of <head>
+C) Anywhere, as long as it’s once
+D) Inside <meta>
+
+✔️ Answer: B
+💡 Explanation: <base> must be inside <head> and there can only be one in the document.
+
+Q5. Which attribute pair correctly sets a video to auto-play without sound and preload metadata only?
+A) ✅ autoplay loop muted preload="metadata"
+B) play="auto" muted preload="lazy"
+C) autoplay preload="auto" sound="off"
+D) controls autoplay="true" mute preload="partial"
+
+✔️ Answer: A
+💡 Explanation: autoplay + muted enables autoplay without user interaction (required on most browsers), and preload="metadata" loads just metadata.
+
+Q6. Which form tag attribute disables default browser validation when the form is submitted?
+A) novalidation="true"
+B) required="false"
+C) validate="off"
+D) ✅ novalidate
+
+✔️ Answer: D
+💡 Explanation: novalidate is a boolean attribute that tells the browser to skip form validation on submit.
+
+Q7. In a <table>, which attribute correctly allows a cell to span across 2 columns?
+A) ✅ colspan="2"
+B) column-span="2"
+C) cellspan="2"
+D) colmerge="2"
+
+✔️ Answer: A
+💡 Explanation: colspan is used on <td> or <th> to merge columns across a cell.
+
+Q8. In the context of <input type="number">, what does the step attribute do?
+A) Limits input to whole numbers
+B) ✅ Specifies how much the value should increment/decrement
+C) Controls the speed of typing
+D) Sets placeholder formatting
+
+✔️ Answer: B
+💡 Explanation: step="1" means values go up/down by 1 using the spinner or keyboard.
+
+Q9. What does the loading="lazy" attribute do when applied to an <img> or <iframe>?
+A) Loads the resource only if a user hovers
+B) ✅ Defers loading until it’s close to being visible in viewport
+C) Loads after page has fully rendered
+D) Prevents the file from ever loading
+
+✔️ Answer: B
+💡 Explanation: loading="lazy" improves performance by deferring off-screen content until it’s needed.
+
+Q10. Which meta tag setting controls how the page is scaled and displayed on mobile devices?
+A) <meta charset="UTF-8">
+B) <meta name="description" content="...">
+C) ✅ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+D) <meta http-equiv="Content-Type" content="text/html">
+
+✔️ Answer: C
+💡 Explanation: The viewport meta tag is essential for responsive design—it controls how a page scales on different screen sizes.
+
+Q11. What is the correct way to make an <img> element accessible for screen readers while also ensuring fallback if image fails to load?
+A) <img src="image.png">
+B) <img src="image.png" title="Image">
+C) ✅ <img src="image.png" alt="Description of image">
+D) <img src="image.png" name="image1">
+
+✔️ Answer: C
+💡 Explanation: The alt attribute provides alternative text that is essential for accessibility and is shown if the image fails to load.
+
+Q12. Which of the following attributes should be used on a <form> to allow file uploads?
+A) method="PUT"
+B) input type="file" only is enough
+C) ✅ enctype="multipart/form-data"
+D) enctype="application/json"
+
+✔️ Answer: C
+💡 Explanation: File uploads require the form to use enctype="multipart/form-data" for proper encoding.
+
+Q13. In which scenario does the readonly attribute work but disabled does not preserve the input value in form submission?
+A) Both behave the same
+B) ✅ When you want to submit a value but prevent user editing
+C) When validating the form
+D) When loading lazy fields
+
+✔️ Answer: B
+💡 Explanation: readonly allows input to be submitted but not edited, whereas disabled prevents both editing and submission.
+
+Q14. How would you provide a fallback caption for a <video> if the browser doesn’t support it?
+A) <video fallback="No video supported.">
+B) ✅ <video>Fallback text here.</video>
+C) alt="No video"
+D) <source>Unsupported</source>
+
+✔️ Answer: B
+💡 Explanation: Content placed between <video> tags (outside <source>) serves as fallback text.
+
+Q15. What is the correct use of aria-* attributes in HTML?
+A) They are replacements for data-*
+B) ✅ They enhance accessibility via assistive technologies
+C) They are used to style components
+D) They define the layout for grid systems
+
+✔️ Answer: B
+💡 Explanation: aria-* attributes are part of the WAI-ARIA standard to improve accessibility for screen readers and other assistive tools.
+
+Q16. What is the correct purpose of accesskey attribute in a <button> element?
+A) Disables mouse interaction
+B) ✅ Defines a keyboard shortcut to focus or activate the element
+C) Allows screen readers to skip it
+D) Links to an anchor tag
+
+✔️ Answer: B
+💡 Explanation: accesskey lets users navigate or activate an element via keyboard shortcut, useful for accessibility and productivity.
+
+Q17. How do you correctly indicate a required field in a form without showing a red asterisk?
+A) <input required="false">
+B) ✅ <input required>
+C) <input mandatory>
+D) <input min="1">
+
+✔️ Answer: B
+💡 Explanation: required is a boolean attribute that triggers HTML5 form validation. The red asterisk is a CSS convention, not automatic.
+
+Q18. Which combination is valid for accessibility and SEO on anchor tags?
+A) <a href="about.html" name="about-us">About</a>
+B) ✅ <a href="about.html" title="Learn about us">About</a>
+C) <a href="about.html" alt="About us">About</a>
+D) <a>About</a>
+
+✔️ Answer: B
+💡 Explanation: title provides helpful context (tooltip + SEO assist). alt is not valid on anchor tags.
+
+Q19. What is the purpose of the defer attribute on a <script> tag?
+A) Makes script non-blocking and runs before DOM
+B) Runs script as soon as it loads
+C) ✅ Waits until the document is parsed, then executes
+D) Prevents script from running
+
+✔️ Answer: C
+💡 Explanation: defer ensures non-blocking loading, and waits for DOM parsing to finish before executing the script — useful for layout-first strategies.
+
+Q20. Which attribute on <textarea> lets you define its visible height in rows and width in columns?
+A) height and width
+B) ✅ rows and cols
+C) size
+D) maxheight and maxwidth
+
+✔️ Answer: B
+💡 Explanation: rows and cols define the visible dimensions of a textarea. height and width are not standard attributes for <textarea>.
+
