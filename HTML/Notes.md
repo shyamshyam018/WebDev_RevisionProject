@@ -133,30 +133,29 @@ This is a list of the most commonly used HTML tags, categorized for better under
 
 
 
+# List of All Self-Closing / Singleton Tags in HTML
 
+| Tag       | Description                                                   |
+|-----------|---------------------------------------------------------------|
+| `<area>`  | Defines an area inside an image-map                           |
+| `<base>`  | Specifies the base URL for relative URLs                      |
+| `<br>`    | Inserts a single line break                                   |
+| `<col>`   | Specifies column properties for table columns                 |
+| `<embed>` | Embeds external content (like videos, PDFs, etc.)             |
+| `<hr>`    | Inserts a horizontal rule (thematic break)                    |
+| `<img>`   | Embeds an image                                               |
+| `<input>` | Creates an input field (text, checkbox, radio, etc.)         |
+| `<link>`  | Links external resources (like CSS) to the document           |
+| `<meta>`  | Provides metadata (like charset, viewport, etc.)              |
+| `<source>`| Specifies multiple media resources for elements               |
+| `<track>` | Provides text tracks for `<video>` or `<audio>`              |
+| `<wbr>`   | Suggests a word break opportunity                             |
 
-List of All Self-Closing / Singleton Tags in HTML
+> ⚠️ Do **not** try to "close" them like `<img></img>` – it's incorrect.
 
-Tag	     Description
-<area>	 Defines an area inside an image-map
-<base>	 Specifies the base URL for relative URLs
-<br>	 Inserts a single line break
-<col>	 Specifies column properties for table columns
-<embed>	 Embeds external content (like videos, PDFs, etc.)
-<hr>	 Inserts a horizontal rule (thematic break)
-<img>	 Embeds an image
-<input>	 Creates an input field (text, checkbox, radio, etc.)
-<link>	 Links external resources (like CSS) to the document
-<meta>	 Provides metadata (like charset, viewport, etc.)
-<source> Specifies multiple media resources for elements
-<track>	 Provides text tracks for <video> or <audio>
-<wbr>	 Suggests a word break opportunity
+---
 
-Do not try to "close" them like <img></img> – it's incorrect.
+## Important Points
 
----------------------------------------------------
-
-Important Points :
-
-1) HTML tags are not case sensitive: <P> means the same as <p>
-2) In HTML5, the / at the end is optional, but allowed (e.g., <br> or <br /> both work).
+1. HTML tags are **not case sensitive**: `<P>` means the same as `<p>`.
+2. In HTML5, the `/` at the end is optional, but allowed (e.g., `<br>` or `<br />` both work).
