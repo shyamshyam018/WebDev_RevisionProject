@@ -618,3 +618,89 @@ D) As a wrapper for multiple forms on different pages
 
 ✅ Answer: C – <main> should wrap only the main, unique content of the page (excluding headers, footers, sidebars).
 
+## NESTING OF BLOCK AND INLINE ELEMENTS
+
+✅ Q1 — Valid
+html
+Copy
+Edit
+<div>
+  <section>
+    <article>
+      <p>This is a paragraph</p>
+    </article>
+  </section>
+</div>
+✔️ Correct!
+This is clean, semantic, and fully valid. All block-level elements are nested properly, and the hierarchy makes sense structurally.
+
+❌ Q2 — Invalid
+html
+Copy
+Edit
+<p>
+  <div>This shouldn’t work</div>
+</p>
+✔️ Correct!
+<p> can’t contain block-level elements like <div>. The browser will auto-close the <p> early, causing unexpected layout bugs.
+
+✅ Q3 — Valid
+html
+Copy
+Edit
+<form>
+  <section>
+    <input type="text" />
+  </section>
+</form>
+✔️ Correct!
+Block-level <section> inside a <form>? Totally valid. You can structure forms semantically using sections, articles, divs, etc.
+
+❌ Q4 — Invalid
+html
+Copy
+Edit
+<ul>
+  <div>Item 1</div>
+  <div>Item 2</div>
+</ul>
+✔️ Correct!
+A <ul> (unordered list) must only contain <li> elements as direct children. <div> is invalid here.
+
+✅ Q5 — Valid
+html
+Copy
+Edit
+<article>
+  <footer>
+    <p>Some footer text</p>
+  </footer>
+</article>
+✔️ Correct!
+You can totally use <footer> inside <article>. In fact, it's semantically recommended if you're closing off a single piece of content.
+
+❌ Q6 — Invalid
+html
+Copy
+Edit
+<table>
+  <div>This won’t fly</div>
+</table>
+✔️ Correct!
+<table> only allows specific tags inside: <thead>, <tbody>, <tfoot>, <tr>, etc. Putting a <div> directly in it is invalid.
+
+✅ Q7 — Valid
+html
+Copy
+Edit
+<div>
+  <p>Intro</p>
+  <h2>Subheading</h2>
+  <ul>
+    <li>One</li>
+    <li>Two</li>
+  </ul>
+</div>
+✔️ Correct!
+This is textbook good structure. All elements are semantically placed, valid, and cleanly nested.
+

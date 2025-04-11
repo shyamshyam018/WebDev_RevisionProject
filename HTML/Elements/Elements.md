@@ -172,6 +172,21 @@ examples : <header>, <nav>, <article>, <aside>, <main>, <footer> , <fig> , <figc
 8. Nesting a <button> inside <a> is not valid HTML. Use one or the other, not both.
 9. <q> is meant for inline quotations and usually auto-wraps with quotation marks.
 10. <span> is inline-only, and shouldn’t wrap block-level tags like <p>, <h1>, etc.
+11. ✅ Inline elements can go inside block-level elements
+12. ❌ Block-level elements generally should NOT go inside inline elements
+13. Parent (Block)	Child (Inline)	   Example
+    <div>	        <span>	           <div><span>Text</span></div>
+    <p>	            <a>	               <p>This is <a href="#">link</a></p>
+    <section>       <strong>	       <section><strong>Bold</strong></section>
+
+
+14. <div><div>Content</div></div>	              ✅	Totally fine
+    <section><article>Stuff</article></section>	  ✅	Semantic layout
+    <p><div>Oops</div></p>	                      ❌	<p> can’t contain block elements
+    <ul><div>Item</div></ul>	                  ❌	Only <li> allowed under <ul>
+    <table><div>Bad</div></table>	              ❌	Tables have strict content rules
+    <form><div><input></div></form>	              ✅	Common and valid
+    <form><form>Nested</form></form>	          ❌	Nested forms are invalid
 
 
 
