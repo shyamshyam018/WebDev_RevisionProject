@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Playground</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    .card {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="mainTitle">Welcome, Shyam!</h1>
+
+  <!-- 🔹 Text update section -->
+  <button id="updateTextBtn">Update Greeting</button>
+
+  <!-- 🔹 Style toggle -->
+  <button id="toggleStyleBtn">Toggle Highlight</button>
+
+  <!-- 🔹 Input & add to list -->
+  <input id="itemInput" type="text" placeholder="Enter item" />
+  <button id="addItemBtn">Add Item</button>
+
+  <!-- 🔹 Item list -->
+  <ul id="itemList"></ul>
+
+  <!-- 🔹 Direct node creation & removal -->
+  <button id="createBoxBtn">Create New Box</button>
+  <div id="boxContainer"></div>
+
+  <script>
+    // Get elements using various selectors
+    const title = document.getElementById("mainTitle");
+    const updateTextBtn = document.getElementById("updateTextBtn");
+    const toggleStyleBtn = document.getElementById("toggleStyleBtn");
+    const itemInput = document.querySelector("#itemInput");
+    const addItemBtn = document.querySelector("#addItemBtn");
+    const itemList = document.querySelector("#itemList");
+    const createBoxBtn = document.getElementById("createBoxBtn");
+    const boxContainer = document.getElementById("boxContainer");
+
+    // 🔸 1. innerText and innerHTML demo
+    updateTextBtn.addEventListener("click", () => {
+      // .innerText updates just the text
+      title.innerText = "You clicked the button!";
+    });
+
+    // 🔸 2. classList and style manipulation
+    toggleStyleBtn.addEventListener("click", () => {
+      title.classList.toggle("highlight"); // Toggle highlight class
+    });
+
+    // 🔸 3. Adding items dynamically to a list
+    addItemBtn.addEventListener("click", () => {
+      const value = itemInput.value.trim();
+      if (value) {
+        const li = document.createElement("li");
+        li.innerText = value;
+        li.classList.add("card");
+        itemList.appendChild(li);
+        itemInput.value = "";
+      }
+    });
+
+    
+
+    // 🔸 4. Event Delegation: clicking on any <li> toggles highlight
+    itemList.addEventListener("click", function(event) {
+      if (event.target.tagName === "LI") {
+        event.target.classList.toggle("highlight");
+      }
+    });
+
+    // 🔸 5. Create and remove a box dynamically
+    createBoxBtn.addEventListener("click", () => {
+      const div = document.createElement("div");
+      div.innerText = "Click to remove me!";
+      div.classList.add("card");
+      div.style.cursor = "pointer";
+
+      // Attach self-remove on click
+      div.addEventListener("click", function () {
+        this.remove(); // Modern way to remove node
+      });
+
+      boxContainer.appendChild(div);
+    });
+
+    // 🔸 6. Bonus: Create multiple elements using loop
+    for (let i = 0; i < 3; i++) {
+      const autoBox = document.createElement("div");
+      autoBox.innerHTML = `<strong>Box ${i + 1}</strong>`;
+      autoBox.style.border = "1px dashed green";
+      autoBox.style.padding = "5px";
+      autoBox.style.marginTop = "10px";
+      boxContainer.appendChild(autoBox);
+    }
+  </script>
+</body>
+</html>
